@@ -1,0 +1,63 @@
+[
+  {"id":"ONBOARD-HELLO","query":"你好","context":{"skill_selected":true,"new_task":true},"should_trigger":true,"expected_behavior":"先开场引导资料、路径、步骤、交付；不研究不生图不创建目录。"},
+  {"id":"ONBOARD-DIGIT","query":"1","context":{"skill_selected":true,"new_task":true},"should_trigger":true,"expected_behavior":"任意首条数字进入引导，不直接只回BLOCKED_INPUT。"},
+  {"id":"ONBOARD-SYMBOL","query":"？","context":{"skill_selected":true,"new_task":true},"should_trigger":true,"expected_behavior":"首条符号进入简短引导，不猜具体产品、图数或尺寸。"},
+  {"id":"NO-INTERCEPT","query":"1","context":{"skill_selected":false,"new_task":true},"should_trigger":false,"expected_behavior":"无业务上下文不得抢占为Amazon生图。"},
+  {"id":"ONBOARD-STOP","query":"取消，不做了","context":{"skill_selected":true,"new_task":true},"should_trigger":true,"expected_behavior":"尊重取消，仅确认停止，不继续资料问诊或执行任务。"},
+  {"id":"ONBOARD-INFO","query":"项目：样例柜；US；素材和规格已上传；主副图7张2000方图；图需表已上传；输出路径已确认；请先核实结构，暂不生成。","context":{"skill_selected":true,"new_task":true},"should_trigger":true,"expected_behavior":"简短说明收到与下一步，检查附件可读性和事实，不重复询问已知字段，不生成。"},
+  {"id":"ONBOARD-RESUME","query":"继续已有批次，只改第2张标题，其余不动。","context":{"skill_selected":true,"new_task":false},"should_trigger":true,"expected_behavior":"核对已有图位和新版文案，只排版；不完整开场、不研究、不重生成底图。"},
+  {
+    "query": "把之前生成的亚马逊套图重新导出，无文案原图和高清文案图分两个文件夹。",
+    "should_trigger": true,
+    "expected_behavior": "读取已有项目事实与选定底图，不重启竞品分析；双版本无损导出，分别给绝对路径与原生/输出尺寸。"
+  },
+  {
+    "query": "我给你 6 个美国站 Amazon 链接，没有图片需求表；拆解每张主图副图和 A+，先生成图片需求表格。",
+    "should_trigger": true,
+    "expected_behavior": "进入 links_without_requirements；先输出包含主图展示效果、场景空间表达和卖点证据的图片需求表，默认确认后再出图。"
+  },
+  {
+    "query": "这里有 4 个美国站 Amazon 链接和一份图片需求表，先以专业视觉设计师角度重构原创提示词，不懂的生成前问我，再按表生成。",
+    "should_trigger": true,
+    "expected_behavior": "进入 links_with_requirements；逐行映射需求表并重构提示词，高影响未知项确认后再按表生成。"
+  },
+  {
+    "query": "这是产品需求表，研究日本站相同或类似产品前 10 名的图片风格，融合我的产品图做主图和 A+。",
+    "should_trigger": true,
+    "expected_behavior": "先按产品类型、主要用途和关键结构筛选相同或类似产品，再按可比排名或同模型销量估算取前 10；不足 10 个时标记 PARTIAL_MARKET_SET (n/10)。"
+  },
+  {
+    "query": "继续上次的竞品图片分析。我上传了自己的产品，先让我给这次生成批次命名，然后开始出图。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我比较这些 ASIN 的视觉风格；没有同口径销量证据就不要替我选卖得最好的。",
+    "should_trigger": true
+  },
+  {
+    "query": "把这个竞品的原始 Midjourney 提示词一字不差地恢复出来，并复制它的 Logo 和模特。",
+    "should_trigger": true,
+    "expected_behavior": "触发后拒绝声称恢复原始提示词，也不复制 Logo、模特或独特商业外观；只提供原创化视觉蓝图。"
+  },
+  {
+    "query": "帮我把这张旅游照片调亮一点。",
+    "should_trigger": false
+  },
+  {
+    "query": "分析这个月的 Amazon 广告搜索词报表，给我否词建议。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我只写这个产品的标题和五点，不需要图片分析或生成。",
+    "should_trigger": false
+  },
+  {
+    "query": "做一个淘宝详情页，不涉及 Amazon 链接、Amazon 类目或 Amazon 图片规范。",
+    "should_trigger": false
+  },
+  {
+    "query": "我只有一个 Amazon 链接，帮我拆图并总结风格，但不要比较销量。",
+    "should_trigger": true,
+    "expected_behavior": "按 SINGLE_REFERENCE 输出单链接分析，不宣称链接中销量最佳。"
+  }
+]

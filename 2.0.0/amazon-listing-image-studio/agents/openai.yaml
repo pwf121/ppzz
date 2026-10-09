@@ -1,0 +1,6 @@
+interface:
+  display_name: "家居电商图片工作室 2.0"
+  short_description: "先理解柜类与沙发，再规划制作 Amazon 主副图和 A+"
+  default_prompt: "请使用 $amazon-listing-image-studio，先开始新手引导，说明所需资料、保存位置、制作步骤与交付内容；已有资料不重复询问，暂不生成图片。"
+policy:
+  allow_implicit_invocation: true

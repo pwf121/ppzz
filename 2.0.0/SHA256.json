@@ -1,0 +1,31 @@
+{
+  "skill": "amazon-listing-image-studio",
+  "version": "2.0.0",
+  "algorithm": "SHA-256",
+  "files": {
+    "amazon-listing-image-studio/SKILL.md": "f4559a2e4e359dde9ab3660fa71c46e31f0a31eb236c2aa7966530b183c7a1bc",
+    "amazon-listing-image-studio/SKILL.patch.md": "a950e5f3d8addbfcade17c93bf4d3a5e0e63761813c2056e89e5ae2b7966fd24",
+    "amazon-listing-image-studio/agents/openai.yaml": "90e508060d1a0cc81663bd6c8400028eb7ce40d471c7b64e4396409b945c25f8",
+    "amazon-listing-image-studio/evals/evals.json": "ff45cfc0696d19b5d2cd16681318234b1701fe36f994207e0d99f6dc0de5bd50",
+    "amazon-listing-image-studio/evals/trigger-evals.json": "5dbd31b5192a0835bdb70ebe64ae7aaec9e84b6b53e5da668ad55e1513409ad1",
+    "amazon-listing-image-studio/references/cabinet-profile.md": "55c1ea44bc0818a0cfd4fc62b17fbb91b140bccc84b742994ac0e444e52e7ebf",
+    "amazon-listing-image-studio/references/data-contract.md": "02d56f5a2032dd0eace71bcc942d595ce4ae01796be80bef9c5a1f1a5ff10b27",
+    "amazon-listing-image-studio/references/export-quality.md": "7cc5123e000f2bd13a0637ed9af96aea58ccff0648ae97a4db716ca1dc0b4744",
+    "amazon-listing-image-studio/references/onboarding.md": "1167f64557b413e24874ad0bca2a46657eb8b201a0c58cf39117982997d8d3e1",
+    "amazon-listing-image-studio/references/research-policy.md": "96184ac07d45d53a68146d06fdaf26fcfb0793ae0d292de9858f9e19a20a11bf",
+    "amazon-listing-image-studio/references/sofa-profile.md": "e33f99d526f807ed15bb51a128b24a03700e789ff35551a07f77c84218ccb3d2",
+    "amazon-listing-image-studio/references/variants.md": "6ff798ac0ddab8a368fc1d82df1f3623e9ad2f2d4af83b8c7dba4f7ddb30fbcb",
+    "amazon-listing-image-studio/references/visual-playbook.md": "bf4d913ef5be2a2436a8137bf0e37f81a75216dda17ed8361608442a17effb01",
+    "amazon-listing-image-studio/scripts/validate_export.py": "970c68033cc4e6778027f49a3ca5181c66701b29d99b6f7c0de9d5ec357731b3",
+    "amazon-listing-image-studio/scripts/workflow.py": "0a9acd9361c00755ac48b2fd12c49148919437271414993accb6d05e73412178",
+    "amazon-listing-image-studio/scripts/workspace.py": "697d9f4490a15a73e305f77a807b8bb07dce984324e810a6a6478f8860bcbb0e",
+    "amazon-listing-image-studio/tests/test_collage_variants.py": "5e1e06f56cbe14855d628bbbab708c660eb5225b519bfd5f3670b4b5a047a771",
+    "amazon-listing-image-studio/tests/test_export_integrity.py": "4c6364f3a1502865acf318dd84a8c986bd4539ea93adcf00d37cd12a1cac0099",
+    "amazon-listing-image-studio/tests/test_export.py": "460d73e8e0247593fbb27c98af55ce9b189d24fcda3ba71165aa82c4eaff38b3",
+    "amazon-listing-image-studio/tests/test_release_contract.py": "3da60d48e8ff5b6983db17b2d4352e9a1d0512deb7e887a2740f747ebfe3805f",
+    "amazon-listing-image-studio/tests/test_requirement_sample_policy.py": "985041d24a9e168ba15ae17c98bd69d4c33679462d455de607af2e24682cdb48",
+    "amazon-listing-image-studio/tests/test_workflow.py": "3a9201018e894581e2e9770ecda0f5893aac74a165e7910b4525b88a507efe2f",
+    "amazon-listing-image-studio/tests/test_workspace.py": "96309d517c577d658d59a21aad3bd461d4675f15e48e71891ceb93505dcbcd64",
+    "使用说明.md": "38d0912f2468e3aa588200262a1728bb549ea0b4f000775d4e8bb9df806a169e"
+  }
+}
